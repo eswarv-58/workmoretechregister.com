@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WorkMoreTech Registration</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <div id="welc">
+        <section class="head">
+            <div>
+                <text><strong>WORKMORE TECH</strong></text><br>
+                <em>An ISO certified Software Company</em>
+            </div>
+        </section>
+        <center><hr color="white"></center>
+        <section class="main" id="mainsec">
+            <h2>Job Application Form</h2>
+            <form>
+                <label id="typed">
+                    Name of the Applicant<br>
+                    <input class="tb" type="text" name="name" id="name-app" required/>
+                </label>
+                <br />
+                <label>
+                    Qualification<br>
+                    <div class="tb" id="rad">
+                    <div id="items">
+                    <input name="qualif" type="radio" value="B.Tech"> B Tech <br />
+                    <input name="qualif" type="radio" value="B.Sc"> B Sc <br />
+                    <input name="qualif" type="radio" value="B.Arch"> B Arch <br />
+                    <input name="qualif" type="radio" value="B.Des"> B Des <br />
+                    </div>
+                    </div>
+                </label>     
+                <label>
+                    Specialization<br>
+                    <select id="spec" class="tb" name="spec" required>
+                        <option value="None">--Select--</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electronics and Communication">Electronics and Communication</option>
+                        <option value="Artifical Intelligence">Artificial Intelligence</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                        <option value="Data Science">Data Science</option>
+                    </select>
+                </label>
+                <br />
+                <label id="typed" >
+                    Email<br>
+                    <input class="tb" type="email" name="email" id="email" required>
+                </label>
+                <br />
+                <label id="typed">
+                    Mobile Number<br>
+                    <input class="tb" type="number" name="mobile" pattern="[0-9]{10}" id="mno" required>
+                </label>
+                <br />
+                <label id="typed" >
+                    Date of Birth<br>
+                    <input class="tb" type="date" name="dob" id="dob" required>
+                </label>
+                <br />
+                <label>
+                    Address<br>
+                    <textarea class="tb" style="width:80%; height:100px" id="ta" placeholder="Address goes here..." required></textarea>
+                </label>
+                <br />
+                <label id="typed" >
+                    Which skill you have the more?<br>
+                    <input class="tb" type="text" name="skill" id="skill" required/>
+                </label>
+                <br />
+                <label>
+                    Preferred Job Roles<br>
+                    <div class="tb" id="rad">
+                    <div id="items2">
+                    <input name="job" type="checkbox" value=" Software Engineer"> Software Engineer<br />
+                    <input name="job" type="checkbox" value=" Web Developer"> Web Developer<br />
+                    <input name="job" type="checkbox" value=" Data Scientist"> Data Scientist<br />
+                    <input name="job" type="checkbox" value=" Machine Learning Engineer"> Machine Learning Engineer<br />
+                    <input name="job" type="checkbox" value=" AI Specialist"> AI Specialist<br />
+                    <input name="job" type="checkbox" value=" Chief Designing Consultant"> Chief Designing Consultant<br />
+                    </div>
+                    </div>
+                </label>
+                <br />
+                <button onclick="clearForm()" class="btn" type="reset" id="clr">Clear</button>
+                <button onclick="submitForm()" class="btn" type="submit" id="sbt">Submit</button>
+            </form>
+        </section>
+        <section class="foot">
+            <p>&copy All Rights Reserved | <a href="https://www.sololearn.com/profile/18097926/?ref=app">Eswar V</a> | 2024</p>
+            <br><a href="info.html"><img src="https://img.icons8.com/?size=100&id=17077&format=png" id="infor" style="filter: invert(1); width: 40px; height: 40px; padding-top: 10px; text-align: center; position: fixed; top: 10px;"></a>
+        </section>
+      </div>
+        <section class="box" id="box">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/coding-4468578-3783951.png?f=webp">
+            <br>
+            <span><strong>Welcome to WorkMoreTech</strong><span><br>
+            <button class="btn" id="open" onclick="welcome()">Register</button>
+        <section>
+    </body>
+</html>
