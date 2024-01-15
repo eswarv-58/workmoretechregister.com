@@ -176,6 +176,9 @@ hr {
     }
 }
 @media screen and (max-width:435px) {
+    .main form #rad {
+        font-size: 13px;
+    }
     .head text {
         font-size: 25px;
     }
